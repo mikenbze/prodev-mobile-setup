@@ -15,7 +15,7 @@ export default function HomeScreen() {
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
         <ImageBackground
-          source={require("@/assets/images/background-image.png")}
+          source={require("@/assets/images/hero-icon.png")}
           style={styles.background}
           resizeMode="cover"
         >
