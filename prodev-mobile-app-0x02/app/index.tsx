@@ -1,11 +1,11 @@
 import React from "react";
 import {
   StyleSheet,
-  Text,
   View,
+  Text,
+  ImageBackground,
   TouchableOpacity,
   Image,
-  ImageBackground,
   Dimensions,
 } from "react-native";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
@@ -24,10 +24,10 @@ export default function HomeScreen() {
             <Image source={require("@/assets/images/Logo.png")} />
           </View>
 
-          {/* Text Group */}
+          {/* ✅ Text Elements */}
           <View style={styles.textGroup}>
             <Text style={styles.textLarge}>Find your favorite place here</Text>
-            <Text style={styles.textSmall}>The best prices for over 2</Text>
+            <Text style={styles.textSmall}>The best prices for over 2 </Text>
             <Text style={styles.textSmall}>million properties worldwide</Text>
           </View>
 
@@ -72,7 +72,6 @@ const styles = StyleSheet.create({
   },
   textGroup: {
     alignItems: "center",
-    marginBottom: 40,
   },
   textLarge: {
     color: "white",
@@ -112,6 +111,5 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     gap: 20,
     paddingHorizontal: 20,
-    marginTop: 40,
   },
 });
